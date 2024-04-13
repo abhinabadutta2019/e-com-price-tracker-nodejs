@@ -2,6 +2,13 @@ const puppeteer = require("puppeteer");
 
 async function fetchAmazonProductPrice(url) {
   const browser = await puppeteer.launch();
+  //
+  // const proxyServer = "159.223.166.21:443"; // Replace 'port' with your actual proxy server port
+
+  // const browser = await puppeteer.launch({
+  //   args: [`--proxy-server=${proxyServer}`],
+  // });
+  //
   const page = await browser.newPage();
   await page.setUserAgent(
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
