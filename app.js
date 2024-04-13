@@ -12,6 +12,7 @@ const fetchAmazonProductDetails = require("./utils/fetchAmazonProductDetails");
 
 //
 app.use("/product", productRouter);
+//
 
 // async function testPuppeteer() {
 //   const browser = await puppeteer.launch();
